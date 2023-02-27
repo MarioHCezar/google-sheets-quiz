@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Quiz Enade - Arquitetura</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/questions.json" defer></script>
+    <script src="js/googleQuestions.js" defer></script>
+    <script src="js/app.js" defer></script>
+    <script src="js/setQuestions.js" defer></script>
+    <script src="js/getResults.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <h2>Questões do Enade Arquitetura e Urbanismo</h2>
+      <button type="button" class="head-home" onclick="homePage()">
+        Voltar ao início
+      </button>
+    </header>
+    <div class="home-box custom-box">
+      <h3>Instruções:</h3>
+      <p>Escolha o tema do quiz</p>
+      <form action=""></form>
+      <select class="select" id="select" name="tema" onchange="setTheme()">
+        <option value="paisagismo">paisagismo</option>
+        <option value="historia">história</option>
+        <option value="projeto">projeto</option>
+        <option value="saneamento">saneamento</option>
+      </select>
+      <p>Quantidade de questões: <span class="total-questions"></span></p>
+      <button type="button" class="btn-next" id="btn" onclick="startQuiz()">
+        Começar
+      </button>
+    </div>
+    <div class="quiz-box custom-box hide">
+      <div class="question-number"></div>
+      <p class="question-text"></p>
+      <div class="option-container"></div>
+      <div class="next-question-btn">
+        <button type="button" class="btn-next" onclick="next(); topFunction()">
+          Próxima
+        </button>
+      </div>
+      <div class="answers-indicator"></div>
+    </div>
+    <div class="result-box custom-box hide">
+      <h1>Resultado</h1>
+      <table>
+        <tr>
+          <td>Total</td>
+          <td><span class="total-question"></span></td>
+        </tr>
+        <tr>
+          <td>Tentativas</td>
+          <td><span class="total-attempt"></span></td>
+        </tr>
+        <tr>
+          <td>Corretas</td>
+          <td><span class="total-correct"></span></td>
+        </tr>
+        <tr>
+          <td>Erradas</td>
+          <td><span class="total-wrong"></span></td>
+        </tr>
+        <tr>
+          <td>Percentual</td>
+          <td><span class="percentage"></span></td>
+        </tr>
+        <tr>
+          <td>Sua pontuação</td>
+          <td><span class="total-score"></span></td>
+        </tr>
+      </table>
+      <button type="button" class="btn-try" onclick="tryAgain()">
+        Tente de novo
+      </button>
+      <button type="button" class="btn-home" onclick="homePage()">
+        Voltar ao início
+      </button>
+    </div>
+
+    <footer class="footer">
+      <p>Mario Henrique Cezar</p>
+      <p>Todos os direitos reservados</p>
+    </footer>
+  </body>
+</html>
