@@ -3,7 +3,7 @@
     "q": "Na história das civilizações humanas, a agricultura esteve relacionada à origem de um fenômeno que se tornaria o marco da economia alimentar: o aumento demográfico. Entretanto, apesar de toda a força civilizatória da agricultura, muitos povos tornaram-se vulneráveis por falta de alimentos. Mesmo com o aumento do volume de alimentos, o número de indivíduos subnutridos é grande, como demonstrado pelos dados estatísticos da Organização das Nações Unidas para a Agricultura e Alimentação (FAO). A análise dos dados revela que, até 2014, a quantidade de pessoas desnutridas no mundo estava    diminuindo, porém, entre 2015 e 2017, esse número aumenta. <h6>LIMA, J. S. G. Segurança alimentar e nutricional: sistemas agroecológicos são a mudança que a intensificação ecológica não alcança.  Ciência e Cultura, v. 69, n. 2, 2017 (adaptado).</h6> <br> Considerando a segurança alimentar e a nutrição no mundo, avalie as afirmações a seguir: <br>  <br>    I. O conceito de segurança alimentar e nutricional admite que a fome e a desnutrição são problemas de oferta adequada e garantia de alimentos saudáveis, respeitando-se a diversidade cultural e a    sustentabilidade socioeconômica e ambiental. <br> <br> II. A segurança alimentar e nutricional compreende a produção e a disponibilidade de alimentos, bem como o acesso à alimentação adequada e saudável. <br> <br> III. A escassez da oferta de alimentos nas últimas décadas decorre da falta de processos de produção e disseminação tecnológica que garantam a produção no campo frente às mudanças climáticas. É correto o que se afirma em:",
     "options": [
       "I, apenas. ",
-      " III, apenas. ",
+      "III, apenas. ",
       "I e II, apenas. ",
       "II e III, apenas. ",
       "I, II e III."
@@ -18,7 +18,7 @@
       "III, apenas.",
       "I e II, apenas.",
       "II e III, apenas",
-      " I, II e III."
+      "I, II e III."
     ],
     "answer": 4,
     "theme": "paisagismo"
@@ -28,10 +28,14 @@
     "q": "O gesso é um mineral aglomerante amplamente        disponível na natureza. Esse material é muito        utilizado em forros e divisórias na construção civil.        Os painéis de gesso acartonado ou drywall são        constituídos de estruturas modulares de gesso e        de papel cartão, com montantes e travas de aço        galvanizados, podendo ainda receber enchimento        interno de lã de rocha.     <br><br>   Considerando as informações apresentadas, é        correto afirmar que",
     "options": [
       "os painéis de gesso acartonado podem reduzir            a sobrecarga estrutural do edifício e agilizar a            execução de vedações internas",
-      " os painéis de gesso acartonado tem como            vantagem a execução a seco e a pequena            geração de entulhos, porém apresentam baixa            resistência ao fogo.",
+
+      "os painéis de gesso acartonado tem como            vantagem a execução a seco e a pequena            geração de entulhos, porém apresentam baixa            resistência ao fogo.",
+
       "os painéis de gesso acartonado com enchimento            de lã de rocha apresentam melhor desempenho            térmico e acústico, garantindo o conforto            ambiental a todo o conjunto edificado.",
+
       "os painéis de gesso acartonado apresentam            limitações no caso de áreas molhadas            como boxes de chuveiros, mesmo quando            adequadamente especificados e revestidos com            pastilhas cerâmicas.",
-      " os painéis de gesso acartonado permitem que            as instalações hidráulicas e elétricas sejam            embutidas entre os montantes e travas de aço            galvanizado, após o fechamento das faces do            painel, por meio de recortes precisos nas placas."
+
+      "os painéis de gesso acartonado permitem que            as instalações hidráulicas e elétricas sejam            embutidas entre os montantes e travas de aço            galvanizado, após o fechamento das faces do            painel, por meio de recortes precisos nas placas."
     ],
     "answer": 0,
     "theme": "projeto"

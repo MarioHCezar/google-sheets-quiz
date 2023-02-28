@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Quiz Enade - Arquitetura</title>
+    <title>Quiz - Arquitetura e Urbanismo</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/questions.json" defer></script>
     <script src="js/googleQuestions.js" defer></script>
@@ -12,26 +12,42 @@
     <script src="js/getResults.js" defer></script>
   </head>
   <body>
-    <header class="header">
-      <h2>Questões do Enade Arquitetura e Urbanismo</h2>
-      <button type="button" class="head-home" onclick="homePage()">
-        Voltar ao início
-      </button>
-    </header>
-    <div class="home-box custom-box">
-      <h3>Instruções:</h3>
-      <p>Escolha o tema do quiz</p>
-      <form action=""></form>
-      <select class="select" id="select" name="tema" onchange="setTheme()">
-        <option value="paisagismo">paisagismo</option>
-        <option value="historia">história</option>
-        <option value="projeto">projeto</option>
-        <option value="saneamento">saneamento</option>
-      </select>
-      <p>Quantidade de questões: <span class="total-questions"></span></p>
-      <button type="button" class="btn-next" id="btn" onclick="startQuiz()">
-        Começar
-      </button>
+    <main class="splash-screen-main">
+      <div class="main-header">
+        <div class="header-text">
+          <h1>Curso de Arquitetura e Urbanismo</h1>
+          <h2>UGB / FERP</h2>
+        </div>
+      </div>
+      <div class="arq-simulado-title">
+        <h3 class="arq-simulado-text">ARQ SIMULADO</h3>
+      </div>
+      <div class="splash-screen-btn">
+        <button class="splash-screen btn">Iniciar</button>
+      </div>
+    </main>
+    <div class="selection-screen">
+      <header class="header">
+        <h2>Questões de Arquitetura e Urbanismo</h2>
+        <button type="button" class="head-home" onclick="homePage()">
+          Voltar ao início
+        </button>
+      </header>
+      <div class="home-box custom-box">
+        <h3>Instruções:</h3>
+        <p>Escolha o tema do quiz</p>
+        <form action=""></form>
+        <select class="select" id="select" name="tema" onchange="setTheme()">
+          <option disabled selected value></option>
+          <option value="Paisagismo">Paisagismo</option>
+          <option value="Historia">História</option>
+          <option value="Projeto">Projeto</option>
+        </select>
+        <p>Quantidade de questões: <span class="total-questions"></span></p>
+        <button type="button" class="btn-next" id="btn" onclick="startQuiz()">
+          Começar
+        </button>
+      </div>
     </div>
     <div class="quiz-box custom-box hide">
       <div class="question-number"></div>

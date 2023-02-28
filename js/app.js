@@ -9,15 +9,15 @@ async function quizMount() {
       const rows = json.table.rows;
       rows.forEach((row) => quiz.push(row.c));
       console.log(quiz);
-      quiz.forEach((question) => questions.push(question[0].v));
-      quiz.forEach((question) => console.log(question[0].v));
+      quiz.forEach((question) => questions.push(question[1].v));
+      quiz.forEach((question) => console.log(question[1].v));
       // renomeando as entradas do quiz para facilitar a criação de questões
       quiz = quiz.map((item) => {
         return {
-          q: item[0].v,
-          options: [item[1].v, item[2].v, item[3].v, item[4].v, item[5].v],
-          answer: item[6].v,
-          theme: item[7].v,
+          q: item[1].v,
+          options: [item[2].v, item[3].v, item[4].v, item[5].v, item[6].v],
+          answer: item[7].v - 1,
+          theme: item[8].v,
         };
       });
       console.log(quiz);
@@ -30,6 +30,9 @@ const questionNumber = document.querySelector(".question-number");
 const questionText = document.querySelector(".question-text");
 const optionContainer = document.querySelector(".option-container");
 const answersIndicatorContainer = document.querySelector(".answers-indicator");
+const splashScreen = document.querySelector(".splash-screen-main");
+const splashButton = document.querySelector(".splash-screen");
+const selectionScreen = document.querySelector(".selection-screen");
 const homeBox = document.querySelector(".home-box");
 const quizBox = document.querySelector(".quiz-box");
 const resultBox = document.querySelector(".result-box");
@@ -38,6 +41,13 @@ const attemptNumber = document.querySelector(".total-attempt");
 let filteredQuestions = "";
 let numberOfQuestions = "";
 let themeValue = "";
+
+const startSplash = () => {
+  splashScreen.style.display = "none";
+  selectionScreen.classList.remove("hide");
+};
+
+splashButton.addEventListener("click", startSplash);
 
 const setTheme = () => {
   themeValue = document.querySelector("#select").value;
@@ -127,5 +137,5 @@ window.addEventListener("beforeunload", () => {
 });
 
 window.addEventListener("load", () => {
-  setTheme();
+  selectionScreen.classList.add("hide");
 });
