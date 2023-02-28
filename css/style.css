@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 
-:root{
+:root {
   --background: #439ed5;
   --secondary-color: #266392;
   --main-text: #f7a016;
   --question-text: #fff;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,18 +16,29 @@ html {
   color-scheme: dark light;
 }
 
-.main-header{
+.splash-screen-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header {
   display: flex;
   align-items: center;
   margin-top: 0;
 }
 
-.main-header::before{
-  content: '|';
+.main-header::before {
+  content: "|";
   font-size: 6rem;
 }
 
-.arq-simulado-title{
+.loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.arq-simulado-title {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,21 +51,21 @@ html {
   display: none;
 } */
 
-.arq-simulado-text{
+.arq-simulado-text {
   font-size: 4.5rem;
   color: var(--main-text);
 }
 
-.arq-logo{
+.arq-logo {
   display: flex;
   flex-direction: row-reverse;
 }
 
-.splash-screen-btn{
- display: flex;
- justify-content: center;
- align-items: center;
- margin-top: 3rem;
+.splash-screen-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
 }
 
 body {
@@ -124,7 +135,7 @@ h2 {
   display: none;
 }
 
-.hide{
+.hide {
   display: none;
 }
 
@@ -219,7 +230,7 @@ h2 {
   overflow: hidden;
 }
 
-.quiz-box .option-container .option:hover{
+.quiz-box .option-container .option:hover {
   cursor: pointer;
 }
 
@@ -382,4 +393,33 @@ h2 {
   border-width: 2px;
   border-radius: 5px;
   box-shadow: 1px 2px 1px grey;
+}
+
+@media only screen and (max-width: 480px) {
+
+  body{
+    max-width: 480px;
+  }
+  .splash-screen-main {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .arq-simulado-title{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+  }
+
+   .loading-icon {
+   width: 20rem;
+  }
+
+  .arq-logo-img{
+    display: none
+  }
+  .footer {
+    background-color: var(--main-text);
+    font-weight: 500;
+  }
 }
