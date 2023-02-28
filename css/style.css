@@ -29,6 +29,7 @@ html {
 
 .arq-simulado-title{
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -42,6 +43,11 @@ html {
 .arq-simulado-text{
   font-size: 4.5rem;
   color: var(--main-text);
+}
+
+.arq-logo{
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .splash-screen-btn{
