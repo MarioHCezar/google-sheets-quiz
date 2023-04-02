@@ -33,6 +33,7 @@ const optionContainer = document.querySelector(".option-container");
 const answersIndicatorContainer = document.querySelector(".answers-indicator");
 const splashScreen = document.querySelector(".splash-screen-main");
 const splashButton = document.querySelector(".splash-screen");
+const btnNext = document.querySelector(".btn-next");
 const selectionScreen = document.querySelector(".selection-screen");
 const homeBox = document.querySelector(".home-box");
 const quizBox = document.querySelector(".quiz-box");
@@ -137,5 +138,6 @@ window.addEventListener("beforeunload", () => {
 });
 
 window.addEventListener("load", () => {
+  topFunction();
   selectionScreen.classList.add("hide");
 });

@@ -35,6 +35,7 @@ const answersIndicator = () => {
     const indicator = document.createElement("div");
     answersIndicatorContainer.appendChild(indicator);
   }
+  
 };
 
 const updateAnswerIndicator = (markType) => {
@@ -50,3 +51,4 @@ const nextQuestion = () => {
     getNewQuestion();
   }
 };
+
