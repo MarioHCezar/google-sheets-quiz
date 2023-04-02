@@ -25,7 +25,8 @@ const unclickableOptions = () => {
   const optionLength = optionContainer.children.length;
   for (let i = 0; i < optionLength; i++) {
     optionContainer.children[i].classList.add("already-answered");
-  }}
+  }
+};
 
 const answersIndicator = () => {
   answersIndicatorContainer.textContent = "";
@@ -42,7 +43,7 @@ const updateAnswerIndicator = (markType) => {
   );
 };
 
-const next = () => {
+const nextQuestion = () => {
   if (questionCounter === filteredQuestions.length) {
     quizOver();
   } else {

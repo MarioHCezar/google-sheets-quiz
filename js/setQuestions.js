@@ -1,10 +1,10 @@
-const setQuestion = ()=> {
+const setQuestion = () => {
   filteredQuestions.forEach((question) => {
     availableQuestions.push(question);
   });
-}
+};
 
-function getNewQuestion() {
+async function getNewQuestion() {
   questionNumber.textContent =
     "Questão " + (questionCounter + 1) + " de " + filteredQuestions.length;
 
@@ -16,10 +16,11 @@ function getNewQuestion() {
   const index1 = availableQuestions.indexOf(questionIndex);
   availableQuestions.splice(index1, 1);
 
-  if (currentQuestion.hasOwnProperty("img")) {
+  if (currentQuestion.img !== null) {
+    const imageLink = "https://drive.google.com/uc?export=view&id=";
     const img = document.createElement("img");
-    img.src = currentQuestion.img;
-    questionText.appendChild(img);
+    img.src = `${imageLink}${currentQuestion.img.substring(33)}`;
+    questionText.append(img);
   }
 
   const optionLength = currentQuestion.options.length;
@@ -43,7 +44,7 @@ function getNewQuestion() {
     option.style.animationDelay = animationDelay + "s";
     animationDelay += 0.2;
     option.className = "option";
-    optionContainer.appendChild(option);
+    optionContainer.append(option);
     option.setAttribute("onclick", "getResult(this)");
   }
 

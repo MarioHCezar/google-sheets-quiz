@@ -2,7 +2,10 @@
 <html lang="pt-br">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0"
+    />
 
     <title>Quiz - Arquitetura e Urbanismo</title>
     <link rel="stylesheet" href="css/style.css" />
@@ -23,14 +26,18 @@
       <div class="arq-simulado-title">
         <h3 class="arq-simulado-text">ARQ SIMULADO</h3>
         <div class="loading">
-          <img class="loading-icon" src="img/loading.png" alt="loading">
+          <img class="loading-icon" src="img/loading.png" alt="loading" />
         </div>
       </div>
       <div class="splash-screen-btn">
         <button class="splash-screen btn">Iniciar</button>
       </div>
       <div class="arq-logo">
-        <img class="arq-logo-img" src="img/arq-logo.png" alt="logo-arquitetura">
+        <img
+          class="arq-logo-img"
+          src="img/arq-logo.png"
+          alt="logo-arquitetura"
+        />
       </div>
     </main>
     <div class="selection-screen">
@@ -49,6 +56,7 @@
           <option value="Paisagismo">Paisagismo</option>
           <option value="Historia">História</option>
           <option value="Projeto">Projeto</option>
+          <option value="Urbanismo">Urbanismo</option>
         </select>
         <p>Quantidade de questões: <span class="total-questions"></span></p>
         <button type="button" class="btn-next" id="btn" onclick="startQuiz()">
@@ -61,7 +69,11 @@
       <p class="question-text"></p>
       <div class="option-container"></div>
       <div class="next-question-btn">
-        <button type="button" class="btn-next" onclick="next(); topFunction()">
+        <button
+          type="button"
+          class="btn-next"
+          onclick="nextQuestion(); topFunction()"
+        >
           Próxima
         </button>
       </div>

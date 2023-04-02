@@ -1,14 +1,14 @@
 let quiz = [];
 const questions = [];
+let images = [];
 
 async function quizMount() {
-  fetch(endpoint)
+  await fetch(endpoint)
     .then((res) => res.text())
     .then((data) => {
       const json = JSON.parse(data.substring(47).slice(0, -2));
       const rows = json.table.rows;
       rows.forEach((row) => quiz.push(row.c));
-      console.log(quiz);
       quiz.forEach((question) => questions.push(question[1].v));
       quiz.forEach((question) => console.log(question[1].v));
       // renomeando as entradas do quiz para facilitar a criação de questões
@@ -18,6 +18,7 @@ async function quizMount() {
           options: [item[2].v, item[3].v, item[4].v, item[5].v, item[6].v],
           answer: item[7].v - 1,
           theme: item[8].v,
+          img: item[9].v,
         };
       });
       console.log(quiz);
@@ -51,7 +52,6 @@ splashButton.addEventListener("click", startSplash);
 
 const setTheme = () => {
   themeValue = document.querySelector("#select").value;
-  // document.write.i;
   filteredQuestions = quiz.filter((item) => item.theme === themeValue);
   numberOfQuestions = filteredQuestions.length;
   homeBox.querySelector(".total-questions").textContent =

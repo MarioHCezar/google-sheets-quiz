@@ -102,6 +102,10 @@ h2 {
   padding-left: 10px;
 }
 
+h6{
+  margin-bottom: 20px;
+}
+
 .head-home {
   background: var(--secondary-color);
   grid-area: button;
@@ -161,6 +165,10 @@ h2 {
 
 .home-box .btn {
   margin-top: 20px;
+}
+
+p {
+  margin-bottom: 20px;
 }
 
 .btn,
@@ -396,8 +404,7 @@ h2 {
 }
 
 @media only screen and (max-width: 480px) {
-
-  body{
+  body {
     max-width: 480px;
   }
   .splash-screen-main {
@@ -405,18 +412,18 @@ h2 {
     justify-content: center;
   }
 
-  .arq-simulado-title{
+  .arq-simulado-title {
     display: flex;
     flex-direction: column;
     width: 10%;
   }
 
-   .loading-icon {
-   width: 20rem;
+  .loading-icon {
+    width: 20rem;
   }
 
-  .arq-logo-img{
-    display: none
+  .arq-logo-img {
+    display: none;
   }
   .footer {
     background-color: var(--main-text);
