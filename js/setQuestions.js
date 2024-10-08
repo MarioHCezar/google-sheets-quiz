@@ -23,6 +23,8 @@ async function getNewQuestion() {
     questionText.append(img);
   }
 
+  // comentário inútil
+
   const optionLength = currentQuestion.options.length;
 
   for (let i = 0; i < optionLength; i++) {
